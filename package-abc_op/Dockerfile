@@ -23,7 +23,7 @@ COPY . .
 ENV NODE_ENV=production
 
 # Build the application
-RUN npm run build
+RUN npm crun build
 
 # Remove development dependencies
 RUN npm prune --production
